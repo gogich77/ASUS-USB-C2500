@@ -30,3 +30,15 @@ iface  enx04421a3c6a7a inet static
         address 169.254.1.4/24
 ```
 
+or manually 
+```
+ip addr flush dev enx04421a3c6a7a
+ip addr add 169.254.1.4/24 dev enx04421a3c6a7a
+ip link set enx04421a3c6a7a up
+
+```
+
+The 2 dvices have to be connested at 2500Mbps now. 
+
+The latest drivers for this chipset are coming with an udev rule that doesn't mention the ASUS one. 
+The ASUS support ws not able to provide any additional information how to apply the dedidcated driver.
