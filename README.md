@@ -35,10 +35,10 @@ or manually
 ip addr flush dev enx04421a3c6a7a
 ip addr add 169.254.1.4/24 dev enx04421a3c6a7a
 ip link set enx04421a3c6a7a up
-
 ```
 
-The 2 dvices have to be connested at 2500Mbps now. 
+The 2 dvices have to be connested at 2500Mbps now.
+
 The download speed from wget command is 280MB/s
 
 
