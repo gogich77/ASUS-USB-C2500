@@ -19,3 +19,14 @@ On plug the default driver is assigned to it.
 [Sat Feb 18 15:53:05 2023] IPv6: ADDRCONF(NETDEV_CHANGE): enx04421a3c6a7a: link becomes ready
 ```
 
+The devise is conencted to another device NAS.
+To assigne it a IP address
+
+/etc/network/interfaces
+```
+..
+allow-hotplug enx04421a3c6a7a
+iface  enx04421a3c6a7a inet static
+        address 169.254.1.4/24
+```
+
