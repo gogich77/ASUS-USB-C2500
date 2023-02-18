@@ -1,7 +1,7 @@
 # ASUS-USB-C2500
 ASUS USB-C2500
 
-No need of any aditional drivers for Ubuntu 22.04 Jammy
+No need of any aditional drivers as r8152 for Ubuntu 22.04 Jammy
 
 On plug the default driver is assigned to it.
 ```
@@ -42,5 +42,5 @@ The 2 dvices have to be connested at 2500Mbps now.
 The download speed from wget command is 280MB/s
 
 
-The latest drivers for this chipset are coming with an udev rule that doesn't mention the ASUS one. 
+The latest drivers for this chipset are coming with an udev rule (50-usb-realtek-net.rules) that doesn't mention the ASUS hardware. 
 The ASUS support ws not able to provide any additional information how to apply the dedidcated driver.
